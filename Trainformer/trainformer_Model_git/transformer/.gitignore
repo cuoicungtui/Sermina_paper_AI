@@ -1,0 +1,33 @@
+__pycache__
+
+# *.en
+# *.vi
+*.txt
+
+saved_model/
+
+data/train/*.en
+data/train/*.vi
+# ./data/
+
+saved_vocab/
+
+checkpoints/
+
+.vscode
+
+.pytest_cache
+
+train2.en
+train2.vi
+
+
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/

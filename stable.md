@@ -1,0 +1,23 @@
+-   Stable Diffusion:
+    -   Papers:
+        -   [Improved Denoising Diffusion Probabilistic Models](http://proceedings.mlr.press/v139/nichol21a/nichol21a.pdf)
+        -   [Training Generative Adversarial Networks with Limited Data](https://proceedings.neurips.cc/paper_files/paper/2020/file/8d30aa96e72440759f74bd2306c1fa3d-Paper.pdf)
+    -   Khái niêm:
+        -   Là thuật toán trong lĩnh vực ML và AI
+        -   Là 1 phần của dự án "Diffusion Probabilistic Models" và được giới thiệu trong báo cáo "Training Generative Adversarial Networks with Limited Data" năm 2020
+    -   Chức năng:
+        -   Nâng cao chất lượng data tổng hợp làm cho data trở nên chân thực và đa dạng hơn
+        -   Cải thiện khả năng huấn luyện mô hình sinh data (GANs) khi có ít dữ liệu huấn luyện
+        -   Kiểm soát tính chất của dữ liệu được tạo ra, trở nên linh hoạt hơn và dễ dàng điều chỉnh theo nhu cầu cụ thể
+    -   Cách hoạt động:
+        -   Cho dữ liệu đi quá trình lan truyền (diffusion process) để biến đổi dữ liệu
+        -   Dùng phương pháp lan truyền ngược (reverse diffusion) xác định cách dữ liệu đã được biến đổi
+        -   So sánh thực tế và dữ liệu tạo để đánh giá mức độ tương đồng
+        -   Xây dựng hàm mất mát dựa trên sự khác biệt giữa dữ liệu thực tế và dữ liệu được tạo ra và tối tưu hóa 
+        -   Lập lại quá trình
+    -   Các thuật toán liên quan:
+        -   Thường dùng chung với các Generative Models để cái thiện chất lượng dữ liệu tạo ra
+        -   Cùng với các kỹ thuật regularization để giữ tính ổn định và đa dạng của dữ liệu tạo ra, tránh hiện tượng "mode collapse"
+            -   Hiện tượng "mode collapse":
+                -   Tạo ra một số lượng hữu hạn các biểu đồ hoặc mẫu dữ liệu giống hệt nhau hoặc tương tự
+                -   Xảy ra khi mô hình không đủ phức tạp hoặc không được huấn luyện một cách cẩn thận
